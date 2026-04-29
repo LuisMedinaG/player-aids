@@ -192,6 +192,8 @@ em     { color: var(--dim); font-style: italic; }
   font-size: 7pt; line-height: 1.4;
 }
 .warning-box strong { color: var(--crimson); }
+.warning-box p { margin-top: 0.08cm; }
+.warning-head { font-weight: 700; font-size: 7.5pt; margin-bottom: 0.04cm; }
 
 /* ── VP table ── */
 .vp-label {
@@ -225,9 +227,21 @@ em     { color: var(--dim); font-style: italic; }
   line-height: 1.4;
 }
 
+/* ── Clan disc ── */
+.clan-disc {
+  display: inline-block;
+  width: 0.90em; height: 0.90em;
+  background: var(--crimson);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 0.05em 0.5em;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
 /* ── Icons ── */
 .ic    { height: 1.0em; width: auto; vertical-align: middle; margin: 0 0.06em; display: inline; }
-.ic-sm { height: 0.82em; width: auto; vertical-align: middle; margin: 0 0.04em; display: inline; }
+.ic-sm { height: 1em; width: auto; vertical-align: middle; margin: 0 0 0.3em; display: inline; }
 
 /* ── Footer ── */
 .panel-footer {

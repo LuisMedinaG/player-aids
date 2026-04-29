@@ -1,160 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>River of Gold — Player Aid (EN, Color)</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-<div class="panel">
+  <div class="panel">
 
-  <!-- ── Header ── -->
-  <div class="panel-header">
-    <img src="./assets/Game-Logo-2000x2000px-1.webp" class="header-logo" alt="River of Gold">
-  </div>
+    <!-- ── Header ── -->
+    <div class="panel-header">
+      <img src="./assets/Game-Logo-2000x2000px-1.webp" class="header-logo" alt="River of Gold">
+    </div>
 
-  <!-- ── Body ── -->
-  <div class="panel-body">
+    <!-- ── Body ── -->
+    <div class="panel-body">
 
-    <!-- ══ SETUP ══ -->
-    <div>
-      <div class="sec">Setup</div>
+      <!-- ══ SETUP ══ -->
+      <div>
+        <div class="sec">Setup</div>
+        <div class="two-col">
+          <!-- Left: steps 1–5 -->
+          <div class="steps">
+            <div class="step"><span class="num">1</span><span class="sb"><strong>Game Board:</strong> Place in center of
+                the table.</span></div>
+            <div class="step"><span class="num">2</span><span class="sb"><strong>Region Tiles:</strong> 1 random <img src="./icons/region-scoring-tile.png" class="ic-sm" alt="scoring tile"> scoring tile on each of the 6 Influence Tracks, correct player-count side.</span></div>
+            <div class="step"><span class="num">3</span><span class="sb"><strong>Mastery Cards:</strong> Deal 3 faceup, 
+                correct side. Return rest to box.</span></div>
+            <div class="step"><span class="num">4</span><span class="sb"><strong>Supply:</strong> Shuffle customer deck
+                facedown. Pile <img src="./icons/koku.png" class="ic-sm" alt="koku"> nearby.</span></div>
+            <div class="step"><span class="num">5</span><span class="sb"><strong>Starting Buildings:</strong>
+                <div class="subs">
+                  <div class="sub"><span class="sl">A.</span><span>3 <img src="./icons/market-tile.png" class="ic-sm" alt="market tile"> <strong>Imperial Market</strong> tiles → 3 Imperial Market spaces.</span></div>
+                  <div class="sub"><span class="sl">B.</span><span>1 <img src="./icons/starting-tile.png" class="ic-sm" alt="starting tile"> starting tile on each shore space marked for your player count.</span></div>
+                </div>
+              </span></div>
+            <div class="step"><span class="num">6</span><span class="sb"><strong>Building Row:</strong>
+                <div class="subs">
+                  <div class="sub"><span class="sl">A.</span><span>Place <img src="./icons/building-board.png" class="ic-sm" style="height: 1.5em;" alt="building board"> building board near main board.</span></div>
+                  <div class="sub"><span class="sl">B.</span><span>Stack <strong>Era 1</strong> + <strong>Era 2</strong>
+                      tiles facedown (see table).</span></div>
+                  <div class="sub"><span class="sl">C.</span><span>Draw top 4 <strong>Era 1</strong>  tiles <img src="./icons/building-tile-example.png" class="ic-sm" alt="building tile"> to the building row.</span></div>
+                </div>
+                <table class="pct">
+                  <thead>
+                    <tr>
+                      <th>Players</th>
+                      <th>Starting Tiles</th>
+                      <th>Era 1</th>
+                      <th>Era 2</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>4</td>
+                      <td>3 Imperial Markets</td>
+                      <td>16</td>
+                      <td>13</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>+ 3 starting</td>
+                      <td>14</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>+ 6 starting</td>
+                      <td>12</td>
+                      <td>9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </span></div>
+          </div>
+          <!-- Right: steps 7–11 -->
+          <div class="steps">
+            <div class="step"><span class="num">7</span><span class="sb"><strong>Player Setup:</strong>
+                <div class="subs">
+                  <div class="sub"><span class="sl">A.</span><span>· 1 Clan Board <img src="./icons/clan-board.png" class="ic-sm" alt="royal ship"> <br>· 2 Standard Ships <img src="./icons/regular-ship-piece.png" class="ic-sm" alt="standard ship"> <br>· 1 Royal Ship <img src="./icons/Royal-Ships-piece.png" class="ic-sm" alt="royal ship"> <br>· 22 Clan Markers <span class="clan-disc" style="background:#1B3A6B"></span> <br> · Score marker <img src="./icons/score-marker.png" class="ic-sm" alt="score">  on 0</span></div>
+                  <div class="sub"><span class="sl">B.</span><span>Place <img src="./icons/divine-sun.png" class="ic-sm" alt="sun"> sun marker on <strong>2</strong> and <img src="./icons/moon.png" class="ic-sm" alt="moon" style="height: 0.9em;"> moon marker between <strong>3–4</strong> of <strong>Divine Favour</strong> track</span></div>
+                  <div class="sub"><span class="sl">C.</span><span>Take 1 of each trade good <img src="./icons/silk.png" class="ic-sm" alt="silk"> <img src="./icons/rice.png" class="ic-sm" alt="rice"> <img src="./icons/porcelain.png" class="ic-sm" alt="porcelain"> from supply onto clan board</span></div>
+                  <div class="sub"><span class="sl">D.</span><span>Draw <strong>2</strong> <img src="./icons/Customer-Cards.png" class="ic-sm" alt="customer cards"> <strong>Customer Cards</strong> (keep hidden in hand)</span></div>
+                </div>
+              </span></div>
+            <div class="step"><span class="num">8</span><span class="sb">Takes a number of Koku based on turn order: <br>
+              <span class="subs"><strong>1st: 7 <img
+                  src="./icons/koku.png" class="ic-sm" alt="koku"> 2nd: 8 <img
+                  src="./icons/koku.png" class="ic-sm" alt="koku"> 3rd: 9 <img
+                  src="./icons/koku.png" class="ic-sm" alt="koku"> 4th: 10 <img
+                  src="./icons/koku.png" class="ic-sm" alt="koku"></strong></span></div>
+            <div class="step"><span class="num">9</span><span class="sb"><strong>Place Ships:</strong> Place each <img src="./icons/regular-ship-piece.png" class="ic-sm" alt="ship"> on <img src="./icons/top-river-starting-space.png" class="ic-sm" alt="starting space"> top and middle river starting spaces, then roll die and move each downstream that many spaces.</span></div>
+            <div class="step"><span class="num">10</span><span class="sb"><em>(Optional)</em> Reverse order: each player
+                picks 1 <strong>Patron Card</strong>.</span></div>
+            <div class="step"><span class="num">11</span><span class="sb"><strong>Roll Die</strong> ready for Turn
+                1.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ YOUR TURN ══ -->
+      <div>
+        <div class="sec">Your Turn — 4 Steps in Order</div>
+        <div class="turn-box">
+          <div class="turn-col">
+            <div class="ti"><span class="num">1</span><span class="sb"><strong>Spend Divine Favour</strong> <img
+                  src="./icons/divine-favour.png" class="ic-sm" alt="DF"><br><em>±1 per <img src="./icons/koku.png"
+                    class="ic-sm" alt="koku"> spent. A 6 wraps to 1 and vice versa.<br>• marker = your
+                  maximum.</em></span></div>
+            <div class="ti"><span class="num">2</span><span class="sb"><strong>Take an Action</strong> — Region matches
+                die<br><em>Build / Sail / Deliver</em></span></div>
+          </div>
+          <div class="turn-col">
+            <div class="ti"><span class="num">3</span><span class="sb"><strong>Claim Masteries</strong>
+                <em>(optional)</em><br><em>Place <span class="clan-disc"></span> Clan Marker on highest unclaimed Mastery reward you meet or exceed.
+                  Score VP immediately. Once per card per game.</em></span></div>
+            <div class="ti"><span class="num">4</span><span class="sb"><strong>Roll Die</strong> for your next
+                turn.</span></div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ══ ACTIONS ══ -->
+      <div>
+        <div class="sec">Actions</div>
+        <div class="three-col">
+
+          <!-- Build -->
+          <div class="action-box">
+            <div class="action-head ah-build">Build a Building</div>
+            <div class="action-body">
+              <div class="steps">
+                <div class="step"><span class="num">1</span><span class="sb">Pay the cost shown on the <strong>Region
+                      tile</strong> in goods or Koku <img src="./icons/koku.png" class="ic-sm" alt="koku">.</span></div>
+                <div class="step"><span class="num">2</span><span class="sb">Place a building token (Manor <img
+                      src="./icons/manor.png" class="ic-sm" alt="manor">, Port <img src="./icons/port.png" class="ic-sm"
+                      alt="port">, or Shrine <img src="./icons/shrine.png" class="ic-sm" alt="shrine">) in the
+                    region.</span></div>
+                <div class="step"><span class="num">3</span><span class="sb">Take the <strong>immediate</strong> bonus
+                    printed on the tile.</span></div>
+              </div>
+              <div class="action-rule">Manors score VP. Ports unlock extra cargo. Shrines grant Divine Favour <img
+                  src="./icons/divine-favour.png" class="ic-sm" alt="DF">.</div>
+            </div>
+          </div>
+
+          <!-- Sail -->
+          <div class="action-box">
+            <div class="action-head ah-sail">Sail</div>
+            <div class="action-body">
+              <div class="steps">
+                <div class="step"><span class="num">1</span><span class="sb">Move your ship <img
+                      src="./icons/royal-ship.png" class="ic-sm" alt="ship"> up to <strong>your speed</strong> spaces
+                    along the river.</span></div>
+                <div class="step"><span class="num">2</span><span class="sb">Collect goods or Koku <img
+                      src="./icons/koku.png" class="ic-sm" alt="koku"> from each port you <em>pass through or stop
+                      at</em>.</span></div>
+                <div class="step"><span class="num">3</span><span class="sb">You may <strong>upgrade your ship</strong>
+                    <img src="./icons/upgrade-ship.png" class="ic-sm" alt="upgrade"> by paying the cost — increases
+                    speed &amp; cargo.</span></div>
+              </div>
+              <div class="action-rule">Cannot carry more goods than your cargo limit. Discard excess before moving.
+              </div>
+            </div>
+          </div>
+
+          <!-- Deliver -->
+          <div class="action-box">
+            <div class="action-head ah-deliver">Deliver</div>
+            <div class="action-body">
+              <div class="steps">
+                <div class="step"><span class="num">1</span><span class="sb">Discard the goods shown on an
+                    <img src="./icons/imperial-market.png" class="ic-sm" alt="imperial market"> <strong>Imperial Market</strong> card at your current port.</span></div>
+                <div class="step"><span class="num">2</span><span class="sb">Take the card; gain its
+                    <strong>Influence</strong> <img src="./icons/influence.png" class="ic-sm" alt="influence"> and any
+                    printed bonus.</span></div>
+                <div class="step"><span class="num">3</span><span class="sb">Refill the market slot immediately from the
+                    matching deck.</span></div>
+              </div>
+              <div class="action-rule">Abilities marked <img src="./icons/ability-activates-after-delivery.png"
+                  class="ic-sm" alt="after delivery"> activate after delivery resolves. &nbsp;·&nbsp; <img src="./icons/ongoing-ability.png" class="ic-sm" alt="ongoing"> ongoing abilities are always active.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══ LIMITS ══ -->
+      <div class="limit-box">
+        MAX 25 <img src="./icons/koku.png" class="ic-sm" alt="koku"> KOKU &nbsp;·&nbsp; MAX 6 OF ANY <img src="./icons/rice.png" class="ic-sm" alt="rice"><img src="./icons/silk.png" class="ic-sm" alt="silk"><img src="./icons/porcelain.png" class="ic-sm" alt="porcelain"> TRADE GOOD
+        &nbsp;·&nbsp; ACTIONS COMPLETABLE <strong>IN FULL</strong>
+      </div>
+
+      <!-- ══ JOURNEY + EMPEROR ══ -->
       <div class="two-col">
-        <div class="steps">
-          <div class="step"><span class="num">1</span><span class="sb">Place the board. Set the <strong>Emperor's Dial</strong> to <strong>7</strong> (5–6 for shorter game).</span></div>
-          <div class="step"><span class="num">2</span><span class="sb">Shuffle each <strong>trade good</strong> deck separately; place face-down in their spaces.</span></div>
-          <div class="step"><span class="num">3</span><span class="sb">Populate the <strong>Imperial Market</strong>: fill all 5 slots from the corresponding decks.</span></div>
-          <div class="step"><span class="num">4</span><span class="sb">Place <strong>Region tiles</strong> face-up in each region. Shuffle the remaining tiles face-down beneath them.</span></div>
-        </div>
-        <div class="steps">
-          <div class="step"><span class="num">5</span><span class="sb">Each player takes a <strong>player board</strong>, 1 ship, and places their <strong>merchant</strong> <img src="./icons/meeple.svg" class="ic-sm" alt="merchant"> on the Start port.</span></div>
-          <div class="step"><span class="num">6</span><span class="sb">Deal <strong>3 cards</strong> to each player. Reveal <strong>Journey cards</strong> equal to player count.</span></div>
-          <div class="step"><span class="num">7</span><span class="sb">Place <strong>Divine Favour</strong> <img src="./icons/divine-favour.png" class="ic-sm" alt="divine favour"> tokens on shrines per rulebook. Give each player <strong>3 Koku</strong> <img src="./icons/koku.png" class="ic-sm" alt="koku">.</span></div>
-          <div class="step"><span class="num">8</span><span class="sb">Randomly determine <strong>first player</strong>; give them the start player marker.</span></div>
-        </div>
-      </div>
-    </div>
 
-    <!-- ══ YOUR TURN ══ -->
-    <div>
-      <div class="sec">Your Turn</div>
-      <div class="turn-box">
-        <div class="turn-col">
-          <div class="ti"><span class="num">1</span><span class="sb"><strong>Play a card</strong> from hand — take the printed action.</span></div>
-          <div class="ti-note">Each card grants: Build, Sail, Deliver, or a special action.</div>
-          <div class="ti"><span class="num">2</span><span class="sb"><strong>Spend Divine Favour</strong> <img src="./icons/divine-favour.png" class="ic-sm" alt="DF"> to copy any card already played this turn.</span></div>
-        </div>
-        <div class="turn-col">
-          <div class="ti"><span class="num">3</span><span class="sb"><strong>Refill hand</strong> to 3 cards from your personal deck (or shuffle discard).</span></div>
-          <div class="ti"><span class="num">4</span><span class="sb"><strong>Pass</strong> the active-player token clockwise.</span></div>
-          <div class="ti-note">The Emperor's Dial advances 1 step at the end of each full round.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ══ ACTIONS ══ -->
-    <div>
-      <div class="sec">Actions</div>
-      <div class="three-col">
-
-        <!-- Build -->
-        <div class="action-box">
-          <div class="action-head ah-build">Build a Building</div>
-          <div class="action-body">
-            <div class="steps">
-              <div class="step"><span class="num">1</span><span class="sb">Pay the cost shown on the <strong>Region tile</strong> in goods or Koku <img src="./icons/koku.png" class="ic-sm" alt="koku">.</span></div>
-              <div class="step"><span class="num">2</span><span class="sb">Place a building token (Manor <img src="./icons/manor.png" class="ic-sm" alt="manor">, Port <img src="./icons/port.png" class="ic-sm" alt="port">, or Shrine <img src="./icons/shrine.png" class="ic-sm" alt="shrine">) in the region.</span></div>
-              <div class="step"><span class="num">3</span><span class="sb">Take the <strong>immediate</strong> bonus printed on the tile.</span></div>
-            </div>
-            <div class="action-rule">Manors score VP. Ports unlock extra cargo. Shrines grant Divine Favour <img src="./icons/divine-favour.png" class="ic-sm" alt="DF">.</div>
+        <div class="journey-box">
+          <div class="journey-head">
+            <img src="./icons/complete-journey.png" alt="journey"> Completing Your Journey
+          </div>
+          <div class="steps">
+            <div class="step"><span class="num">1</span><span class="sb">Gain 3 <img src="./icons/koku.png"
+                  class="ic-sm" alt="koku"> Koku or 1 <img src="./icons/any-good.png" class="ic-sm" alt="trade good">
+                Trade Good.</span></div>
+            <div class="step"><span class="num">2</span><span class="sb">Activate your <strong>Merchants</strong> with
+                completed orders.</span></div>
+            <div class="step"><span class="num">3</span><span class="sb">Discard tile at <strong>end of Building
+                  Row</strong>; slide and refill.</span></div>
+          </div>
+          <div class="ti-note" style="margin-top:0.07cm;"><img src="./icons/moon.png" class="ic-sm" alt="moon marker"> When a Ship wraps from the last river space back to the first.
           </div>
         </div>
 
-        <!-- Sail -->
-        <div class="action-box">
-          <div class="action-head ah-sail">Sail</div>
-          <div class="action-body">
+        <div class="warning-box">
+          <div class="warning-head">&#9651; Emperor's Visit</div>
+          <p>When the last <strong>Era 1</strong> tile enters the Building Row, all players collect <strong>Owner
+              rewards</strong> (flat end) <img src="./icons/koku.png" class="ic-sm" alt="koku"><img
+              src="./icons/divine-favour.png" class="ic-sm" alt="DF"><img src="./icons/koku.png" class="ic-sm"
+              alt="koku"> for every Building they own.</p>
+        </div>
+
+      </div>
+
+      <!-- ══ END GAME ══ -->
+      <div>
+        <div class="sec">End Game &amp; Final Scoring</div>
+        <div class="two-col">
+          <div>
             <div class="steps">
-              <div class="step"><span class="num">1</span><span class="sb">Move your ship <img src="./icons/royal-ship.png" class="ic-sm" alt="ship"> up to <strong>your speed</strong> spaces along the river.</span></div>
-              <div class="step"><span class="num">2</span><span class="sb">Collect goods or Koku <img src="./icons/koku.png" class="ic-sm" alt="koku"> from each port you <em>pass through or stop at</em>.</span></div>
-              <div class="step"><span class="num">3</span><span class="sb">You may <strong>upgrade your ship</strong> <img src="./icons/upgrade-ship.png" class="ic-sm" alt="upgrade"> by paying the cost — increases speed &amp; cargo.</span></div>
+              <div style="font-size:7pt;line-height:1.35;margin-bottom:0.05cm;"><strong>Trigger:</strong> Last
+                <strong>Era 2</strong> tile enters the Building Row.
+              </div>
+              <div class="step"><span class="num">1</span><span class="sb">Current player scores <strong>5
+                    VP</strong>.</span></div>
+              <div class="step"><span class="num">2</span><span class="sb">Each other player takes <strong>1 final
+                    Turn</strong>.</span></div>
+              <div class="step"><span class="num">3</span><span class="sb">Final Scoring:
+                  <div class="subs">
+                    <div class="sub"><span class="sl">①</span><span><img src="./icons/influence.png" class="ic-sm"
+                          alt="influence"> <strong>Influence:</strong> VP for 1st / 2nd <em>(some: 3rd)</em> per Region.
+                        No influence = 0. Ties: split evenly rounded down. <br><em>2p: 2nd only if within 5 spaces of
+                          1st.</em></span></div>
+                    <div class="sub"><span class="sl">②</span><span><strong>Customers delivered</strong> → VP (see
+                        table).</span></div>
+                    <div class="sub"><span class="sl">③</span><span><strong>End-game card abilities</strong> <img
+                          src="./icons/final-scoring.png" class="ic-sm" alt="final scoring"></span></div>
+                  </div>
+                </span></div>
             </div>
-            <div class="action-rule">Cannot carry more goods than your cargo limit. Discard excess before moving.</div>
+            <div style="font-size:6.5pt;color:var(--dim);font-style:italic;margin-top:0.05cm;">Tiebreaker: most <img
+                src="./icons/divine-favour.png" class="ic-sm" alt="DF"> Divine Favour.</div>
+          </div>
+          <div>
+            <div class="vp-label">Customers Delivered → VP</div>
+            <div class="vp-table">
+              <div class="vp-cell">
+                <div class="vp-top">1</div>
+                <div class="vp-bot">2</div>
+              </div>
+              <div class="vp-cell">
+                <div class="vp-top">2</div>
+                <div class="vp-bot">5</div>
+              </div>
+              <div class="vp-cell">
+                <div class="vp-top">3</div>
+                <div class="vp-bot">9</div>
+              </div>
+              <div class="vp-cell">
+                <div class="vp-top">4</div>
+                <div class="vp-bot">14</div>
+              </div>
+              <div class="vp-cell">
+                <div class="vp-top">5</div>
+                <div class="vp-bot">20</div>
+              </div>
+              <div class="vp-cell">
+                <div class="vp-top">6+</div>
+                <div class="vp-bot">27</div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- Deliver -->
-        <div class="action-box">
-          <div class="action-head ah-deliver">Deliver</div>
-          <div class="action-body">
-            <div class="steps">
-              <div class="step"><span class="num">1</span><span class="sb">Discard the goods shown on an <strong>Imperial Market</strong> card at your current port.</span></div>
-              <div class="step"><span class="num">2</span><span class="sb">Take the card; gain its <strong>Influence</strong> <img src="./icons/influence.png" class="ic-sm" alt="influence"> and any printed bonus.</span></div>
-              <div class="step"><span class="num">3</span><span class="sb">Refill the market slot immediately from the matching deck.</span></div>
-            </div>
-            <div class="action-rule">Abilities marked <img src="./icons/ability-activates-after-delivery.png" class="ic-sm" alt="after delivery"> activate after delivery resolves.</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- ══ JOURNEY + EMPEROR ══ -->
-    <div class="two-col">
-
-      <div class="journey-box">
-        <div class="journey-head">
-          <img src="./icons/complete-journey.png" alt="journey"> Complete a Journey
-        </div>
-        <div class="steps">
-          <div class="step"><span class="num">1</span><span class="sb">Meet the <strong>goods requirement</strong> shown on the Journey card.</span></div>
-          <div class="step"><span class="num">2</span><span class="sb">Discard the goods; claim the card and its <strong>VP</strong> + bonus.</span></div>
-          <div class="step"><span class="num">3</span><span class="sb">Reveal a new Journey card from the deck.</span></div>
-        </div>
-        <div class="ti-note" style="margin-top:0.07cm;">Moon markers <img src="./icons/moon-marker.png" class="ic-sm" alt="moon"> on journey cards modify timing of rewards.</div>
       </div>
 
-      <div class="warning-box">
-        <strong>Emperor's Visit</strong><br>
-        When the dial reaches <strong>0</strong>, scoring is triggered.<br><br>
-        Each player with <strong>fewer buildings</strong> than the leader loses <strong>Influence</strong> <img src="./icons/influence.png" class="ic-sm" alt="influence"> equal to the difference.<br><br>
-        The dial resets; game ends after the <strong>final visit</strong>.
-      </div>
 
-    </div>
+    </div><!-- /panel-body -->
 
-    <!-- ══ END GAME ══ -->
-    <div>
-      <div class="sec">End Game Scoring</div>
-      <div class="vp-label">Victory Points from:</div>
-      <div class="vp-table">
-        <div class="vp-cell"><div class="vp-top">Influence</div><div class="vp-bot">1:1 VP</div></div>
-        <div class="vp-cell"><div class="vp-top">Manors</div><div class="vp-bot">2 VP each</div></div>
-        <div class="vp-cell"><div class="vp-top">Journeys</div><div class="vp-bot">printed VP</div></div>
-        <div class="vp-cell"><div class="vp-top">Market cards</div><div class="vp-bot"><img src="./icons/final-scoring.png" class="ic-sm" alt="final scoring"> sets</div></div>
-        <div class="vp-cell"><div class="vp-top">Divine Sun</div><div class="vp-bot"><img src="./icons/divine-sun.png" class="ic-sm" alt="divine sun"> bonus</div></div>
-      </div>
-    </div>
+    <!-- ── Footer ── -->
+    <div class="panel-footer">◆ Fabio Lopiano &amp; Łukasz Woźniak · 2–4 Players ◆</div>
 
-    <!-- ══ LIMITS ══ -->
-    <div class="two-col">
-      <div class="limit-box">
-        <strong>Hand Limit:</strong> 3 cards<br>
-        <em>Discard excess at end of turn</em>
-      </div>
-      <div class="limit-box">
-        <strong>Cargo Limit:</strong> varies by ship<br>
-        <em>Upgrade to carry more goods</em>
-      </div>
-    </div>
-
-  </div><!-- /panel-body -->
-
-  <!-- ── Footer ── -->
-  <div class="panel-footer">◆ Fabio Lopiano &amp; Łukasz Woźniak · 2–4 Players ◆</div>
-
-</div><!-- /panel -->
+  </div><!-- /panel -->
 </body>
+
 </html>
