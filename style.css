@@ -4,6 +4,7 @@
 :root {
   --crimson: #7A1525;
   --navy:    #1B3A6B;
+  --forest:  #1a4029;
   --gold:    #C8922A;
   --sand:    #EAD99A;
   --ink:     #2A1508;
@@ -28,7 +29,7 @@ body {
 body::before {
   content: '';
   position: absolute;
-  inset: 0 0 4.5cm 0;
+  inset: 0 0 3.0cm 0;
   background-image: url('./assets/background.png');
   background-size: 21.59cm 27.94cm;
   background-repeat: no-repeat;
@@ -117,7 +118,8 @@ body::before {
 
 .sb    { flex: 1; }
 strong { font-weight: 700; }
-.navy  { color: var(--navy); }
+.navy   { color: var(--navy); }
+.forest { color: var(--forest); }
 em     { color: var(--dim); font-style: italic; }
 
 .subs { margin: 0.06cm 0 0 1.6em; display: flex; flex-direction: column; gap: 0.05cm; }

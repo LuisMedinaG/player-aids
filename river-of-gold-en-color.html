@@ -32,8 +32,8 @@
                 facedown. Pile <img src="./icons/koku.png" class="ic-sm" alt="koku"> nearby.</span></div>
             <div class="step"><span class="num">4</span><span class="sb"><strong>Starting Buildings:</strong>
                 <div class="subs">
-                  <div class="sub"><span class="sl">A.</span><span>3 <strong>Imperial Market</strong> tiles <img
-                        src="./icons/market-tile.png" class="ic-sm" alt="market tile"> → 3 Imperial Market
+                  <div class="sub"><span class="sl">A.</span><span>3 <span class="forest"><strong>Imperial Market</strong></span> tiles <img
+                        src="./icons/market-tile.png" class="ic-sm" alt="market tile"> → 3 <span class="forest">Imperial Market</span>
                       spaces.</span></div>
                   <div class="sub"><span class="sl">B.</span><span>1 <strong>Starting Tile</strong> <img
                         src="./icons/starting-tile.png" class="ic-sm" alt="starting tile"> on each shore space marked
@@ -64,7 +64,7 @@
                   <tbody>
                     <tr>
                       <td>4</td>
-                      <td>3 Imperial Markets</td>
+                      <td>3 <span class="forest">Imperial Markets</span></td>
                       <td>16</td>
                       <td>13</td>
                     </tr>
@@ -144,7 +144,7 @@
           </div>
           <div class="turn-col">
             <div class="ti"><span class="num">3</span><span class="sb"><strong>Claim Masteries</strong>
-                <em>(optional)</em><br><em>Place <span class="clan-disc"></span> Clan Marker on highest unclaimed
+                <em>(optional)</em><br><em>Place <span class="clan-disc"></span> Clan Marker on <strong>highest</strong> unclaimed
                   Mastery reward you meet or exceed.
                   Score VP immediately. Once per card per game.</em></span></div>
             <div class="ti"><span class="num">4</span><span class="sb"><strong>Roll Die</strong> for your next
@@ -184,9 +184,9 @@
             <div class="action-body">
               <div class="steps">
                 <div class="step"><span class="num">1</span><span class="sb"><strong>Choose</strong> an empty in a region <strong>matching</strong> your die. Pay its <img src="./icons/koku.png" class="ic-sm" alt="koku"> cost.</span></div>
-                <div class="step"><span class="num">2</span><span class="sb"><strong>Take</strong> any tile from the Building Row <img src="./icons/building-tile-example.png" class="ic-sm" alt="building tile"> and place it on the space. <em><strong>End tile:</strong> gain 1</em>  <img src="./icons/divine-favour.png" class="ic-sm" alt="divine favour">.</span></div>
+                <div class="step"><span class="num">2</span><span class="sb"><strong>Take</strong> any tile from the <span class="navy">Building Row</span> <img src="./icons/building-tile-example.png" class="ic-sm" alt="building tile"> and place it on the space. <em><strong>End tile:</strong> gain 1</em>  <img src="./icons/divine-favour.png" class="ic-sm" alt="divine favour">.</span></div>
                 <div class="step"><span class="num">3</span><span class="sb"><strong>Place</strong> your clan marker on the <span class="navy">build bonus</span>; <strong>gain</strong> that <span class="navy">influence</span> <img src="./icons/influence.png" class="ic-sm" alt="influence"> on the region track. Collect rewards along the path; <em>excess is lost</em>.</span></div>
-                <div class="step"><span class="num">4</span><span class="sb"><strong>Slide</strong> the Building Row and refill from the building board.</span></div>
+                <div class="step"><span class="num">4</span><span class="sb"><strong>Slide</strong> the <span class="navy">Building Row</span> and refill from the building board.</span></div>
               </div>
             </div>
           </div>
@@ -196,18 +196,11 @@
             <div class="action-head ah-sail">Sail 1 ship</div>
             <div class="action-body">
               <div class="steps">
-                <div class="step"><span class="num">1</span><span class="sb">Move your ship <img
-                      src="./icons/royal-ship.png" class="ic-sm" alt="ship"> up to <strong>your speed</strong> spaces
-                    along the river.</span></div>
-                <div class="step"><span class="num">2</span><span class="sb">Collect goods or Koku <img
-                      src="./icons/koku.png" class="ic-sm" alt="koku"> from each port you <em>pass through or stop
-                      at</em>.</span></div>
-                <div class="step"><span class="num">3</span><span class="sb">You may <strong>upgrade your ship</strong>
-                    <img src="./icons/upgrade-ship.png" class="ic-sm" alt="upgrade"> by paying the cost — increases
-                    speed &amp; cargo.</span></div>
+                <div class="step"><span class="num">1</span><span class="sb">Move 1 ship <img src="./icons/royal-ship.png" class="ic-sm" alt="ship"> exactly your die's value downriver. (Count gold spaces only.)</span></div>
+                <div class="step"><span class="num">2</span><span class="sb">Collect <strong>Visitor rewards</strong> (pointed end of tile) from the 4 shore spaces adjacent to where you stop. Empty space = 1 <img src="./icons/koku.png" class="ic-sm" alt="koku">.</span></div>
+                <div class="step"><span class="num">3</span><span class="sb">All owners of buildings in those 4 spaces (including you) collect their <strong>Owner rewards</strong> (flat end of tile). Starting buildings &amp; <span class="forest">Imperial Markets</span> grant none.</span></div>
               </div>
-              <div class="action-rule">Cannot carry more goods than your cargo limit. Discard excess before moving.
-              </div>
+              <div class="action-rule"><img src="./icons/influence.png" class="ic-sm" alt="influence"> gained is always in the building's region.</div>
             </div>
           </div>
 
@@ -216,19 +209,11 @@
             <div class="action-head ah-deliver">Deliver to 1 customer</div>
             <div class="action-body">
               <div class="steps">
-                <div class="step"><span class="num">1</span><span class="sb">Discard the goods shown on an
-                    <img src="./icons/imperial-market.png" class="ic-sm" alt="imperial market"> <strong>Imperial
-                      Market</strong> card at your current port.</span></div>
-                <div class="step"><span class="num">2</span><span class="sb">Take the card; gain its
-                    <span class="navy"><strong>Influence</strong></span> <img src="./icons/influence.png" class="ic-sm" alt="influence"> and any
-                    printed bonus.</span></div>
-                <div class="step"><span class="num">3</span><span class="sb">Refill the market slot immediately from the
-                    matching deck.</span></div>
+                <div class="step"><span class="num">1</span><span class="sb">Choose a Customer Card <img src="./icons/Customer-Cards.png" class="ic-sm" alt="customer card"> from your hand whose region matches your die. Discard the goods shown on its Order Request.</span></div>
+                <div class="step"><span class="num">2</span><span class="sb">Place the card faceup near your clan board. Gain its delivery reward <img src="./icons/ability-activates-after-delivery.png" class="ic-sm" alt="delivery reward">; <img src="./icons/ongoing-ability.png" class="ic-sm" alt="ongoing"> ongoing ability activates now.</span></div>
+                <div class="step"><span class="num">3</span><span class="sb">Draw 2 Customer Cards, then discard 1 from your hand faceup. Reshuffle discard pile if deck is empty.</span></div>
               </div>
-              <div class="action-rule">Abilities marked <img src="./icons/ability-activates-after-delivery.png"
-                  class="ic-sm" alt="after delivery"> activate after delivery resolves. &nbsp;·&nbsp; <img
-                  src="./icons/ongoing-ability.png" class="ic-sm" alt="ongoing"> ongoing abilities are always active.
-              </div>
+              <div class="action-rule">End-game abilities <img src="./icons/final-scoring.png" class="ic-sm" alt="end game"> score during Final Scoring.</div>
             </div>
           </div>
 
@@ -252,7 +237,7 @@
                   Row</strong>; slide and refill.</span></div>
           </div>
           <div class="ti-note" style="margin-top:0.07cm;"><img src="./icons/moon.png" class="ic-sm" alt="moon marker">
-            When a Ship wraps from the last river space back to the first.
+            When a Ship wraps from the last river space back to the first.<br>Ships cannot move upstream · Ships may not pass through another ship.
           </div>
         </div>
 
