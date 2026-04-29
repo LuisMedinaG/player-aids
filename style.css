@@ -27,10 +27,11 @@ body {
 body::before {
   content: '';
   position: absolute;
-  inset: 0;
+  inset: 0 0 4.5cm 0;
   background-image: url('./assets/background.png');
   background-size: 21.59cm 27.94cm;
   background-repeat: no-repeat;
+  background-position: 0 -1cm;
   z-index: 0;
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
@@ -39,7 +40,7 @@ body::before {
 /* ── Panel ── */
 .panel {
   position: absolute;
-  inset: 0.38cm 1.05cm 0.35cm;
+  inset: 0.6cm 1.05cm 0.35cm;
   background: transparent;
   border: none;
   border-radius: 0.25cm;
