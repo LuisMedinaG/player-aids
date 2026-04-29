@@ -3,6 +3,7 @@
 
 :root {
   --crimson: #7A1525;
+  --navy:    #1B3A6B;
   --gold:    #C8922A;
   --sand:    #EAD99A;
   --ink:     #2A1508;
@@ -116,6 +117,7 @@ body::before {
 
 .sb    { flex: 1; }
 strong { font-weight: 700; }
+.navy  { color: var(--navy); }
 em     { color: var(--dim); font-style: italic; }
 
 .subs { margin: 0.06cm 0 0 1.6em; display: flex; flex-direction: column; gap: 0.05cm; }
