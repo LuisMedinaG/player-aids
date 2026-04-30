@@ -14,7 +14,7 @@
 
 html, body {
   width: 21.59cm;
-  height: 27.94cm;
+  height: 27cm;
   overflow: hidden;
 }
 
@@ -29,7 +29,7 @@ body {
 body::before {
   content: '';
   position: absolute;
-  inset: 0 0 3.0cm 0;
+  inset: 0 0 1cm 0;
   background-image: url('./assets/background.png');
   background-size: 21.59cm 27.94cm;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@ body::before {
 /* ── Panel ── */
 .panel {
   position: absolute;
-  inset: 0.6cm 1.05cm 0.35cm;
+  inset: 0.35cm 1.05cm 0.35cm;
   background: transparent;
   border: none;
   border-radius: 0.25cm;
@@ -52,26 +52,12 @@ body::before {
   z-index: 1;
 }
 
-/* ── Header ── */
-.panel-header {
-  text-align: center;
-  padding: 0;
-  flex-shrink: 0;
-}
-.header-logo {
-  height: 2.4cm;
-  width: auto;
-  mix-blend-mode: multiply;
-  display: block;
-  margin: 0 auto;
-}
-
 /* ── Body ── */
 .panel-body {
   padding: 0.04cm 0.08cm 0.15cm;
   display: flex;
   flex-direction: column;
-  gap: 0.13cm;
+  gap: 0.2cm;
   flex: 1;
   overflow: hidden;
 }
@@ -79,23 +65,27 @@ body::before {
 /* ── Section title ── */
 .sec {
   font-family: 'Cinzel', serif;
-  font-size: 8pt;
+  font-size: 9pt;
   font-weight: 700;
   color: var(--crimson);
   font-variant: small-caps;
   letter-spacing: 0.07em;
   border-bottom: 1.5px solid var(--gold);
   padding-bottom: 0.03cm;
-  margin-bottom: 0.1cm;
+  margin-bottom: 0.12cm;
 }
 
 /* ── Grids ── */
 .two-col   { display: grid; grid-template-columns: 1fr 1fr;     gap: 0.3cm; }
 .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.22cm; }
 
-/* ── Steps ── */
+/* ── Steps (default) ── */
 .steps { display: flex; flex-direction: column; gap: 0.07cm; }
 .step  { display: flex; align-items: flex-start; gap: 0.35em; font-size: 7.5pt; line-height: 1.33; }
+
+/* ── Setup-specific: tighter spacing, slightly smaller font ── */
+.setup-steps        { gap: 0.05cm; }
+.setup-steps .step  { font-size: 7pt; line-height: 1.3; }
 
 .num {
   background: var(--crimson);
@@ -140,7 +130,7 @@ em     { color: var(--dim); font-style: italic; }
 .pct td { border: 1px solid var(--gold); padding: 0.04cm 0.12cm; text-align: center; }
 .pct tr:nth-child(even) td { background: rgba(200,146,42,0.1); }
 
-/* ── Your Turn 2-col ── */
+/* ── Your Turn box ── */
 .turn-box {
   border: 1.5px solid var(--gold);
   border-radius: 0.18cm;
@@ -152,23 +142,55 @@ em     { color: var(--dim); font-style: italic; }
 }
 .turn-col { padding: 0.12cm 0.3cm; display: flex; flex-direction: column; gap: 0.09cm; }
 .turn-col:first-child { border-right: 1px solid var(--gold); }
-.ti { display: flex; align-items: flex-start; gap: 0.35em; font-size: 7.5pt; line-height: 1.33; }
+.ti      { display: flex; align-items: flex-start; gap: 0.35em; font-size: 7.5pt; line-height: 1.33; }
 .ti-note { font-size: 7pt; color: var(--dim); font-style: italic; }
 
+/* ── Limit + Anytime combined bar (prominent) ── */
+.limit-bar {
+  border: 2px solid var(--crimson);
+  border-radius: 0.18cm;
+  background: rgba(122, 21, 37, 0.06);
+  padding: 0.09cm 0.35cm;
+  font-family: 'Cinzel', serif;
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--crimson);
+  line-height: 1.5;
+  margin-bottom: 0.13cm;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+.anytime-text {
+  font-size: 6.5pt;
+  color: var(--ink);
+  font-family: 'Noto Serif', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0;
+}
+
 /* ── Action boxes ── */
-.action-box  { border: 1.5px solid var(--gold); border-radius: 0.18cm; overflow: hidden; }
+.action-box  {
+  border: 1.5px solid var(--gold);
+  border-radius: 0.18cm;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 .action-head {
-  font-family: 'Cinzel', serif; font-size: 7pt; font-weight: 700;
+  font-family: 'Cinzel', serif; font-size: 7.5pt; font-weight: 700;
   letter-spacing: 0.09em; text-transform: uppercase; color: #FAF0DC;
-  padding: 0.09cm 0.26cm;
+  padding: 0.1cm 0.26cm;
   display: flex; align-items: center; gap: 0.3em;
   print-color-adjust: exact; -webkit-print-color-adjust: exact;
 }
-.action-head img { height: 0.95em; width: auto; filter: brightness(0) invert(1); opacity: 0.85; }
+.action-head img { height: 1em; width: auto; filter: brightness(0) invert(1); opacity: 0.85; }
 .ah-build   { background: var(--crimson); }
 .ah-sail    { background: var(--sail); }
 .ah-deliver { background: #5C3010; }
-.action-body { padding: 0.11cm 0.26cm 0.14cm; }
+.action-body { padding: 0.13cm 0.26cm 0.14cm; flex: 1; }
 .action-body .step { font-size: 7pt; line-height: 1.32; }
 .action-rule {
   margin-top: 0.08cm; padding-top: 0.06cm;
@@ -176,29 +198,64 @@ em     { color: var(--dim); font-style: italic; }
   font-size: 6.5pt; color: var(--crimson); font-style: italic;
 }
 
-/* ── Journey ── */
-.journey-box { border: 1px solid var(--sail); border-radius: 0.18cm; padding: 0.11cm 0.28cm; }
-.journey-head {
-  font-family: 'Cinzel', serif; font-size: 7pt; font-weight: 700;
-  color: var(--sail); text-transform: uppercase; letter-spacing: 0.08em;
-  display: flex; align-items: center; gap: 0.28em; margin-bottom: 0.07cm;
+/* ── Building types visitor-reward legend (inside BUILD) ── */
+.btype-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.05cm 0.15cm;
+  margin-top: 0.09cm;
+  padding-top: 0.07cm;
+  border-top: 1px dashed rgba(200,146,42,0.55);
+  font-size: 6pt;
 }
-.journey-head img { height: 1em; width: auto; }
+.btype {
+  display: flex;
+  align-items: center;
+  gap: 0.1em;
+  white-space: nowrap;
+  color: var(--dim);
+}
 
-/* ── Emperor's Visit ── */
-.warning-box {
-  border: 1.5px solid var(--crimson);
-  border-radius: 0.18cm;
-  color: var(--crimson);
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  text-align: center;
-  padding: 0.1cm 0.28cm;
-  font-size: 7pt; line-height: 1.4;
+/* ── Action verb highlight ── */
+.vb { color: var(--crimson); font-weight: 700; }
+
+/* ── Completing Your Journey (integrated into SAIL) ── */
+.journey-sub {
+  margin-top: 0.09cm;
+  padding-top: 0.08cm;
+  border-top: 1.5px solid rgba(27, 92, 107, 0.35);
+  font-size: 6.5pt;
+  line-height: 1.35;
+  color: var(--ink);
 }
-.warning-box strong { color: var(--crimson); }
-.warning-box p { margin-top: 0.08cm; }
-.warning-head { font-weight: 700; font-size: 7.5pt; margin-bottom: 0.04cm; }
+.journey-sub-head {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 6.5pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  margin-bottom: 0.04cm;
+  color: var(--sail);
+}
+.journey-sub-head img { height: 1em; width: auto; }
+
+/* ── Emperor's Visit callout (below action columns) ── */
+.emperor-note {
+  background: rgba(122, 21, 37, 0.06);
+  border: 1.5px solid var(--crimson);
+  border-radius: 0.14cm;
+  padding: 0.07cm 0.3cm;
+  font-size: 7pt;
+  line-height: 1.38;
+  margin-top: 0.12cm;
+  text-align: center;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+.emperor-note strong { color: var(--crimson); }
 
 /* ── VP table ── */
 .vp-label {
@@ -220,18 +277,6 @@ em     { color: var(--dim); font-style: italic; }
 }
 .vp-bot { font-weight: 700; font-size: 9pt; padding: 0.05cm 0; }
 
-/* ── Limit box ── */
-.limit-box {
-  border: 1.5px solid var(--gold);
-  border-radius: 0.18cm;
-  text-align: center;
-  padding: 0.1cm 0.4cm;
-  font-family: 'Cinzel', serif;
-  font-size: 7pt;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-}
-
 /* ── Clan disc ── */
 .clan-disc {
   display: inline-block;
@@ -247,15 +292,3 @@ em     { color: var(--dim); font-style: italic; }
 /* ── Icons ── */
 .ic    { height: 1.0em; width: auto; vertical-align: middle; margin: 0 0.06em; display: inline; }
 .ic-sm { height: 1em; width: auto; vertical-align: middle; margin: 0 0 0.3em; display: inline; }
-
-/* ── Footer ── */
-.panel-footer {
-  flex-shrink: 0;
-  text-align: center;
-  padding: 0.1cm 0;
-  font-family: 'Cinzel', serif;
-  font-size: 6pt;
-  color: var(--dim);
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
