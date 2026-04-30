@@ -29,7 +29,7 @@ body {
 body::before {
   content: '';
   position: absolute;
-  inset: 0 0 2.5cm 0;
+  inset: 0 0 1cm 0;
   background-image: url('./assets/background.png');
   background-size: 21.59cm 27.94cm;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@ body::before {
 /* ── Panel ── */
 .panel {
   position: absolute;
-  inset: 0.6cm 1.05cm 0.35cm;
+  inset: 0.35cm 1.05cm 0.35cm;
   background: transparent;
   border: none;
   border-radius: 0.25cm;
@@ -200,14 +200,13 @@ em     { color: var(--dim); font-style: italic; }
 
 /* ── Building types visitor-reward legend (inside BUILD) ── */
 .btype-row {
-  display: flex;
-  gap: 0.08cm;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.05cm 0.15cm;
   margin-top: 0.09cm;
   padding-top: 0.07cm;
   border-top: 1px dashed rgba(200,146,42,0.55);
   font-size: 6pt;
-  justify-content: space-around;
 }
 .btype {
   display: flex;
@@ -216,6 +215,9 @@ em     { color: var(--dim); font-style: italic; }
   white-space: nowrap;
   color: var(--dim);
 }
+
+/* ── Action verb highlight ── */
+.vb { color: var(--crimson); font-weight: 700; }
 
 /* ── Completing Your Journey (integrated into SAIL) ── */
 .journey-sub {
