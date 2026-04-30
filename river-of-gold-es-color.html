@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Río de Oro — Ayuda de Jugador (ES, Color)</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="panel">
+    <div class="panel-body">
+
+      <!-- ══ PREPARACIÓN ══ -->
+      <div>
+        <div class="sec">Preparación</div>
+        <div class="two-col">
+
+          <!-- Izquierda: pasos 1–5 -->
+          <div class="steps setup-steps">
+            <div class="step"><span class="num">1</span><span class="sb"><strong>Baldosas de Región:</strong> 1 baldosa
+                aleatoria de puntuación <img src="./icons/region-scoring-tile.png" class="ic-sm" alt="scoring tile">
+                en cada una de las 6 Pistas de Influencia, lado del conteo de jugadores.</span></div>
+            <div class="step"><span class="num">2</span><span class="sb"><strong>Cartas de Maestría:</strong> Reparte 3
+                boca arriba, lado correcto. Devuelve el resto a la caja.</span></div>
+            <div class="step"><span class="num">3</span><span class="sb"><strong>Suministro:</strong> Baraja el mazo
+                de Clientes boca abajo. Apila <img src="./icons/koku.png" class="ic-sm" alt="koku"> y mercancías
+                cerca.</span></div>
+            <div class="step"><span class="num">4</span><span class="sb"><strong>Edificios Iniciales:</strong> Coloca
+                3 baldosas de <span class="forest"><strong>Mercado Imperial</strong></span>
+                <img src="./icons/market-tile.png" class="ic-sm" alt="market tile"> en los 3 espacios de Mercado
+                Imperial. Coloca 1 <strong>Baldosa Inicial</strong>
+                <img src="./icons/starting-tile.png" class="ic-sm" alt="starting tile"> en cada espacio de orilla
+                marcado para el número de jugadores.</span></div>
+            <div class="step"><span class="num">5</span><span class="sb"><strong>Hilera de Edificios:</strong> Coloca
+                el tablero de construcción <img src="./icons/building-board.png" class="ic-sm" style="height:1.5em"
+                  alt="building board"> cerca del tablero principal. Apila las baldosas de <strong>Era 1</strong> +
+                <strong>Era 2</strong> boca abajo (ver tabla). Coloca las 4 primeras baldosas de
+                <strong>Era 1</strong> <img src="./icons/building-tile-example.png" class="ic-sm"
+                  alt="building tile"> en la hilera.
+                <table class="pct">
+                  <thead>
+                    <tr><th>Jugadores</th><th>Baldosas Iniciales</th><th>Era 1</th><th>Era 2</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>4</td><td>3 <span class="forest">Mercados Imperiales</span></td><td>16</td><td>13</td></tr>
+                    <tr><td>3</td><td>+ 3 iniciales</td><td>14</td><td>11</td></tr>
+                    <tr><td>2</td><td>+ 6 iniciales</td><td>12</td><td>9</td></tr>
+                  </tbody>
+                </table>
+              </span></div>
+          </div>
+
+          <!-- Derecha: pasos 6–10 -->
+          <div class="steps setup-steps">
+            <div class="step"><span class="num">6</span><span class="sb"><strong>Preparación de Jugador:</strong>
+                <div class="subs">
+                  <div class="sub"><span class="sl">A.</span><span>· 1 Tablero de Clan <img
+                        src="./icons/clan-board.png" class="ic-sm" alt="clan board">
+                      <br>· 2 Barcos Estándar <img src="./icons/regular-ship-piece.png" class="ic-sm"
+                        alt="standard ship">
+                      <br>· 1 Barco Real <img src="./icons/Royal-Ships-piece.png" class="ic-sm" alt="royal ship">
+                      <br>· 22 Marcadores de Clan <span class="clan-disc"
+                        style="background:#1B3A6B"></span><span class="clan-disc"
+                        style="background:#d5d6d0"></span><span class="clan-disc"
+                        style="background:#5e7d6f"></span><span class="clan-disc" style="background:#6d2b2b"></span>
+                      <br>· Marcador de puntuación <img src="./icons/score-marker.png" class="ic-sm"
+                        alt="score marker"> en 0</span></div>
+                  <div class="sub"><span class="sl">B.</span><span>Marcador solar <img src="./icons/divine-sun.png"
+                        class="ic-sm" alt="sun"> en <strong>2</strong>, marcador lunar <img src="./icons/moon.png"
+                        class="ic-sm" alt="moon" style="height:0.9em"> entre <strong>3–4</strong> en la Pista de
+                      <strong>Favor Divino</strong></span></div>
+                  <div class="sub"><span class="sl">C.</span><span>Toma 1 de cada mercancía <img
+                        src="./icons/silk.png" class="ic-sm" alt="silk"><img src="./icons/rice.png" class="ic-sm"
+                        alt="rice"><img src="./icons/porcelain.png" class="ic-sm"
+                        alt="porcelain"> del suministro al tablero de clan</span></div>
+                  <div class="sub"><span class="sl">D.</span><span>Roba <strong>2 Cartas de Cliente</strong> <img
+                        src="./icons/Customer-Cards.png" class="ic-sm" alt="customer cards"> (mantenlas ocultas en
+                      mano)</span></div>
+                </div>
+              </span></div>
+            <div class="step"><span class="num">7</span><span class="sb"><strong
+                  style="color:var(--crimson);">Koku por orden de turno:</strong><br>
+                <span
+                  style="display:block;text-align:center;font-size:9pt;font-weight:700;margin-top:0.04cm;letter-spacing:0.03em;color:#5e7d6f;">
+                  1°: 7 <img src="./icons/koku.png" class="ic" alt="koku"> &nbsp;·&nbsp; 2°: 8 <img
+                    src="./icons/koku.png" class="ic" alt="koku"> &nbsp;·&nbsp; 3°: 9 <img src="./icons/koku.png"
+                    class="ic" alt="koku"> &nbsp;·&nbsp; 4°: 10 <img src="./icons/koku.png" class="ic"
+                    alt="koku"></span>
+              </span></div>
+            <div class="step"><span class="num">8</span><span class="sb"><strong>Coloca los Barcos:</strong> Coloca
+                cada barco estándar <img src="./icons/regular-ship-piece.png" class="ic-sm" alt="ship"> en los
+                espacios inicial superior y medio del río <img src="./icons/top-river-starting-space.png"
+                  class="ic-sm" alt="starting space">, luego lanza el dado y mueve cada barco corriente abajo esa
+                cantidad de espacios.</span></div>
+            <div class="step"><span class="num">9</span><span class="sb"><em>(Opcional)</em> En orden inverso: cada
+                jugador elige 1 <strong>Carta de Patrón</strong>.</span></div>
+            <div class="step"><span class="num">10</span><span class="sb"><strong>Lanza el Dado</strong> listo para el
+                Turno 1.</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══ TU TURNO ══ -->
+      <div>
+        <div class="sec">Tu Turno — 4 Pasos en Orden</div>
+        <div class="turn-box">
+          <div class="turn-col">
+            <div class="ti"><span class="num">1</span><span class="sb"><strong>Gastar Favor Divino</strong>
+                <img src="./icons/divine-favour.png" class="ic-sm" alt="DF"> <em>(opcional)</em><br>
+                <em>±1 por <img src="./icons/divine-favour.png" class="ic-sm" alt="DF"> gastado. Un 6 se convierte
+                  en 1 y viceversa.</em><br>
+                <em><img src="./icons/divine-sun.png" class="ic-sm" alt="sun"> = actual &nbsp;·&nbsp; <img
+                    src="./icons/moon.png" class="ic-sm" alt="moon" style="height:0.9em"> = máximo.</em>
+              </span></div>
+            <div class="ti"><span class="num">2</span><span class="sb"><strong>Realizar 1 Acción</strong> — La Región
+                coincide con el dado<br><em>Construir / Navegar / Entregar</em></span></div>
+          </div>
+          <div class="turn-col">
+            <div class="ti"><span class="num">3</span><span class="sb"><strong>Reclamar Maestrías</strong>
+                <em>(opcional)</em><br>
+                <em>Coloca <span class="clan-disc"></span> en la recompensa más alta no reclamada que alcances o
+                  superes. Puntúa PV inmediatamente. Una vez por carta por partida. Se pueden reclamar varias
+                  maestrías en el mismo turno.</em></span></div>
+            <div class="ti"><span class="num">4</span><span class="sb"><strong>Lanza el Dado</strong> para tu próximo
+                turno.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ ACCIONES ══ -->
+      <div>
+        <div class="sec">Acciones</div>
+
+        <!-- Barra de límites + en cualquier momento -->
+        <div class="limit-bar">
+          MÁX 25 <img src="./icons/koku.png" class="ic-sm" alt="koku"> KOKU &nbsp;·&nbsp;
+          MÁX 6 DE CUALQUIER <img src="./icons/silk.png" class="ic-sm" alt="silk"><img src="./icons/rice.png"
+            class="ic-sm" alt="rice"><img src="./icons/porcelain.png" class="ic-sm"
+            alt="porcelain"> MERCANCÍA &nbsp;·&nbsp; COMPLETAR ACCIÓN <strong>EN SU TOTALIDAD</strong><br>
+          <span class="anytime-text">
+            <strong>En cualquier momento:</strong> 2 iguales → 1 de cualquier otra &nbsp;/&nbsp;
+            5 <img src="./icons/koku.png" class="ic-sm" alt="koku"> → 1 <img src="./icons/divine-favour.png"
+              class="ic-sm" alt="divine favour"> Favor Divino
+          </span>
+        </div>
+
+        <!-- Tres columnas de acción -->
+        <div class="three-col">
+
+          <!-- ── CONSTRUIR ── -->
+          <div class="action-box">
+            <div class="action-head ah-build">
+              <img src="./icons/building-tile-example.png" alt="build"> Construir 1 Edificio
+            </div>
+            <div class="action-body">
+              <div class="steps">
+                <div class="step"><span class="num">1</span><span class="sb"><strong class="vb">Elige</strong> un
+                    espacio de orilla vacío en la región de tu dado. Paga su coste en
+                    <img src="./icons/koku.png" class="ic-sm" alt="koku"> Koku.
+                    <em>(No necesitas un barco.)</em></span></div>
+                <div class="step"><span class="num">2</span><span class="sb"><strong class="vb">Toma</strong> cualquier
+                    baldosa de la Hilera de Edificios
+                    <img src="./icons/building-tile-example.png" class="ic-sm" alt="building tile">; colócala en el
+                    espacio. <em><strong>Última baldosa</strong> → gana 1</em>
+                    <img src="./icons/divine-favour.png" class="ic-sm" alt="divine favour">.</span></div>
+                <div class="step"><span class="num">3</span><span class="sb"><strong class="vb">Coloca</strong> tu
+                    marcador de clan en el bono de construcción; avanza esa
+                    <img src="./icons/influence.png" class="ic-sm" alt="influence"> en la pista regional, ganando
+                    recompensas al pasar. <em>El exceso se pierde.</em></span></div>
+                <div class="step"><span class="num">4</span><span class="sb"><strong class="vb">Desliza</strong> las
+                    baldosas restantes y rellena desde el tablero.</span></div>
+              </div>
+              <!-- Recompensas de visitante por tipo de edificio -->
+              <div class="btype-row">
+                <span class="btype"><img src="./icons/port.png" class="ic-sm" alt="port">
+                  Puerto → <img src="./icons/koku.png" class="ic-sm" alt="koku"></span>
+                <span class="btype"><img src="./icons/shrine.png" class="ic-sm" alt="shrine">
+                  Santuario → PV</span>
+                <span class="btype"><img src="./icons/manor.png" class="ic-sm" alt="manor">
+                  Mansión → <img src="./icons/influence.png" class="ic-sm" alt="influence"></span>
+                <span class="btype"><img src="./icons/market-tile.png" class="ic-sm" alt="market">
+                  Mercado → mercancía</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── NAVEGAR ── -->
+          <div class="action-box">
+            <div class="action-head ah-sail">
+              <img src="./icons/royal-ship.png" alt="sail"> Navegar con 1 Barco
+            </div>
+            <div class="action-body">
+              <div class="steps">
+                <div class="step"><span class="num">1</span><span class="sb"><strong class="vb">Mueve</strong> 1 barco
+                    <img src="./icons/royal-ship.png" class="ic-sm" alt="ship"> exactamente el valor de tu dado
+                    corriente abajo. <em>(Solo espacios dorados.)</em></span></div>
+                <div class="step"><span class="num">2</span><span class="sb"><strong class="vb">Cobra</strong> las
+                    recompensas de visitante (punta de baldosa) de los <strong>4 espacios de orilla</strong>
+                    adyacentes donde te <strong>detienes</strong>. Espacio vacío = 1
+                    <img src="./icons/koku.png" class="ic-sm" alt="koku">.</span></div>
+                <div class="step"><span class="num">3</span><span class="sb">Los propietarios <strong
+                      class="vb">cobran</strong> sus recompensas (lado plano) de esos 4 espacios. Los edificios
+                    iniciales y <span class="forest">Mercados Imperiales</span> no otorgan
+                    ninguna.</span></div>
+              </div>
+              <div class="action-rule"><img src="./icons/influence.png" class="ic-sm"
+                  alt="influence"> obtenida siempre corresponde a la región del edificio.</div>
+              <!-- Completar tu Travesía — integrado -->
+              <div class="journey-sub">
+                <div class="journey-sub-head">
+                  <img src="./icons/complete-journey.png" alt="journey"> Completar tu Travesía
+                </div>
+                Cuando el barco pasa del último al primer espacio del río:<br>
+                <strong class="vb">Gana</strong> 3 <img src="./icons/koku.png" class="ic-sm" alt="koku"> o 1
+                <img src="./icons/any-good.png" class="ic-sm" alt="trade good"> Mercancía<br>
+                <strong class="vb">Activa</strong> los <strong>Mercaderes</strong> con pedidos completos<br>
+                <strong class="vb">Descarta</strong> la última baldosa de la Hilera; desliza y rellena<br>
+                <em>Los barcos no van a contracorriente · No pueden pasar por otro barco.</em>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── ENTREGAR ── -->
+          <div class="action-box">
+            <div class="action-head ah-deliver">
+              <img src="./icons/Customer-Cards.png" alt="deliver"> Entregar a 1 Cliente
+            </div>
+            <div class="action-body">
+              <div class="steps">
+                <div class="step"><span class="num">1</span><span class="sb"><strong class="vb">Elige</strong> una
+                    <strong>Carta de Cliente</strong>
+                    <img src="./icons/Customer-Cards.png" class="ic-sm" alt="customer card"> de tu mano cuya
+                    <strong>región coincida con tu dado</strong>. Descarta las mercancías de su
+                    <strong>Pedido</strong>.</span></div>
+                <div class="step"><span class="num">2</span><span class="sb"><strong class="vb">Coloca</strong> la
+                    carta boca arriba cerca del tablero de clan. Obtén su <strong>recompensa de entrega</strong>
+                    <img src="./icons/ability-activates-after-delivery.png" class="ic-sm" alt="delivery">; <img
+                      src="./icons/ongoing-ability.png" class="ic-sm" alt="ongoing"> habilidad continua activa
+                    ahora.</span></div>
+                <div class="step"><span class="num">3</span><span class="sb"><strong class="vb">Roba</strong>
+                    <strong>2 Cartas de Cliente</strong>, luego descarta <strong>1</strong> de tu mano boca arriba.
+                    Baraja el descarte si el mazo está vacío.</span></div>
+              </div>
+              <div class="action-rule">Habilidades de fin de partida <img src="./icons/final-scoring.png"
+                  class="ic-sm" alt="end game"> puntúan durante la Puntuación Final.</div>
+            </div>
+          </div>
+
+        </div><!-- /three-col -->
+
+        <!-- Visita del Emperador -->
+        <div class="emperor-note">
+          <strong>⚠ Visita del Emperador:</strong> Cuando la última baldosa de <strong>Era 1</strong> entra en la
+          Hilera de Edificios, todos los jugadores cobran las <strong>recompensas de propietario</strong> (lado
+          plano) de cada edificio que poseen.
+        </div>
+
+      </div><!-- /acciones -->
+
+      <!-- ══ FIN DEL JUEGO Y PUNTUACIÓN FINAL ══ -->
+      <div>
+        <div class="sec">Fin del Juego y Puntuación Final</div>
+        <div class="two-col">
+          <div>
+            <div class="steps">
+              <div style="font-size:7pt;line-height:1.35;margin-bottom:0.05cm;">
+                <strong>Desencadenante:</strong> La última baldosa de <strong>Era 2</strong> entra en la Hilera de
+                Edificios.
+              </div>
+              <div class="step"><span class="num">1</span><span class="sb">El jugador activo puntúa <strong>5
+                    PV</strong>.</span></div>
+              <div class="step"><span class="num">2</span><span class="sb">Cada otro jugador realiza <strong>1 Turno
+                    Final</strong>.</span></div>
+              <div class="step"><span class="num">3</span><span class="sb">Puntuación Final:
+                  <div class="subs">
+                    <div class="sub"><span class="sl">①</span><span><img src="./icons/influence.png" class="ic-sm"
+                          alt="influence"> <span class="navy"><strong>Influencia:</strong></span> PV para 1° / 2°
+                        <em>(algunos: 3°)</em> por Región. Sin influencia = 0. Empates: repartir redondeando hacia
+                        abajo. <em>2j: 2° solo si está a 5 espacios del 1°.</em></span></div>
+                    <div class="sub"><span class="sl">②</span><span><strong>Clientes entregados</strong> → PV (ver
+                        tabla).</span></div>
+                    <div class="sub"><span class="sl">③</span><span><strong>Habilidades de fin de partida</strong>
+                        <img src="./icons/final-scoring.png" class="ic-sm" alt="final scoring"></span></div>
+                  </div>
+                </span></div>
+            </div>
+            <div style="font-size:6.5pt;color:var(--dim);font-style:italic;margin-top:0.06cm;">
+              Desempate: más <img src="./icons/divine-favour.png" class="ic-sm" alt="DF"> Favor Divino.
+            </div>
+          </div>
+          <div>
+            <div class="vp-label">Clientes Entregados → PV</div>
+            <div class="vp-table">
+              <div class="vp-cell"><div class="vp-top">1</div><div class="vp-bot">2</div></div>
+              <div class="vp-cell"><div class="vp-top">2</div><div class="vp-bot">5</div></div>
+              <div class="vp-cell"><div class="vp-top">3</div><div class="vp-bot">9</div></div>
+              <div class="vp-cell"><div class="vp-top">4</div><div class="vp-bot">14</div></div>
+              <div class="vp-cell"><div class="vp-top">5</div><div class="vp-bot">20</div></div>
+              <div class="vp-cell"><div class="vp-top">6+</div><div class="vp-bot">27</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /panel-body -->
+  </div><!-- /panel -->
+</body>
+
+</html>
